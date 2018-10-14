@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+
+  db:
+    image: postgres
+    container_name: db-rest-service
+    restart: always
+    volumes:
+     - ~/rep/tutorials/spring/rest-service/postgres/data/pg:/var/lib/postgresql/data
+     - /etc/localtime:/etc/localtime:ro
+    ports:
+     - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: admin

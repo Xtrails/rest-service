@@ -29,4 +29,13 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-web')
 	runtimeOnly('org.springframework.boot:spring-boot-devtools')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
+
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	compile('org.postgresql:postgresql')
+
+	compile('org.projectlombok:lombok') //https://www.youtube.com/watch?v=mGfiV9WDd6Y&index=23&list=PLU2ftbIeotGpAYRP9Iv2KLIwK36-o_qYk&t=1s
+	compile('javax.xml.bind:jaxb-api')
+	compile('com.sun.xml.bind:jaxb-core')
+	compile('com.sun.xml.bind:jaxb-impl')
+	//compile('net.iryndin:jdbf')
 }
