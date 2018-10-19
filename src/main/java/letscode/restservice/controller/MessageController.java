@@ -61,14 +61,14 @@ public class MessageController {
     public Message update(
             @PathVariable("id") Message messageFromDb,
             @RequestBody Message message
-    ){
-        BeanUtils.copyProperties(message,messageFromDb,"id");
+    ) {
+        BeanUtils.copyProperties(message, messageFromDb, "id");
 
         return messageRepo.save(messageFromDb);
     }
 
     @DeleteMapping("{id}")
-    public void delete(@PathVariable("id") Message message){
+    public void delete(@PathVariable("id") Message message) {
         messageRepo.delete(message);
     }
 
