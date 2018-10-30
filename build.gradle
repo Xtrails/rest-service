@@ -42,4 +42,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.0.0.RELEASE')
 
+	//Зависимости для фронтенда авторизации
+	compile('org.springframework.session:spring-session-jdbc')
+	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
 }

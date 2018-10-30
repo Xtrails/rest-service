@@ -1,15 +1,5 @@
-nav .nav-wrapper {
-    position: relative;
-    height: 100%;
-    background-color: #1f4175;
-}
-
 .page-footer {
     background-color: #1f4175;
-    /*position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;*/
 }
 
 .content{
@@ -31,4 +21,10 @@ nav .nav-wrapper {
 
 .del-button-post{
     float: right;
+}
+
+nav .nav-wrapper {
+    position: relative;
+    height: 100%;
+    background-color: #1f4175;
 }
